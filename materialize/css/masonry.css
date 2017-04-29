@@ -1,0 +1,348 @@
+/*
+body {
+  background-color: #F1F1F1;
+}
+*/
+.modal {
+    width: 75%;
+    max-height: 100%;
+}
+
+.modal.bottom.sheet {
+    max-height: 85%
+}
+
+.modal.modal-fixed-footer {
+    height: 85%;
+}
+/*
+#header {
+    margin-bottom: 20px;
+}
+*/
+input.header-search-input {
+    padding: 8px 47px;
+}
+i.mdi-content-send {
+    left: 92.5%;
+}
+
+#image-data {
+  margin-top: 10px;
+}
+
+#image-data .container {
+  height: 500px;
+}
+
+#fix-thumb:hover {
+	cursor: pointer;
+}
+
+.item {
+    padding: 2px ;
+}
+/*
+.item img{
+    /*box-shadow:0px 3px 4px rgba(0,0,0,0.16); /*#dcdcdc;
+    border-radius: 6px;
+    border:3px solid #FFF;
+    transition: all 0.3s ease;
+}
+*/
+/*
+.item img:hover {
+    border:3px solid #CF4647;
+}
+*/
+.collection .collection-item {
+    line-height: 1.4rem;
+}
+.collection .collection-item.avatar {
+    min-height: 70px;
+}
+.collection .collection-item.avatar p {
+    font-size: 12px;
+}
+.collection .collection-item.avatar i.circle {
+    font-size: 16px;
+    line-height: 38px;
+}
+/*** Image Details ***/
+
+.imgdetail {
+  position: fixed;
+  /*max-width: 1600px;*/
+  height: 100%; /*800px;*/
+  overflow-y: auto; 
+  top: -800px;
+  left: 0;
+  right: 0;
+  /*display: none;*/
+  opacity: 0;
+  z-index: 2;
+  background: #eee;
+}
+
+.imgdetail-close {
+  padding: 5px 15px 0 0;
+  color: #757575;
+}
+
+.imgheight {
+    height: 655px;
+    line-height: 655px;
+    position: absolute;
+    width: 40%;
+    top: 0;
+}
+
+.imgheight img {
+  vertical-align: middle;
+  max-width: 450px;
+  height: auto;
+  max-height: 550px;
+}
+
+td, th {
+  padding: 3px 5px;
+  font-size: 12px;
+}
+
+.collapsible-header {
+  font-size: 13px;
+  min-height: 2rem;
+  line-height: 2rem;
+  background-color: #e0e0e0;
+}
+
+.collapsible-header i {
+  line-height: 2rem;
+}
+
+/*** Masonry ***/
+
+.grid {
+  max-width: 1600px;
+  /*top: 40px;*/
+  margin-bottom: 45px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  width: 160px; /*Ancho fijo estándard del contenedor para todos los thumbs*/
+  /*text-align: center;*/
+  border-color: hsla(0, 0%, 0%, 0.7);
+  margin-bottom: 20px;
+}
+
+.with-card {
+  height: 220px; /*Alto fijo estándard del contenedor para todos los thumbs*/
+  background: #FFF;
+  box-shadow:0px 3px 4px #dcdcdc;
+}
+
+.no-card {
+  height: auto; /*220px; Tamaño fijo estándard para todos los thumbs*/
+}
+
+.grid-item--width2 { width: 170px; }
+.grid-item--height2 { width: 170px; }
+
+/*.grid-item img {
+  display: block;
+  max-width: 100%;
+}*/
+
+.grid-item img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-item p.code-text {
+  font-size: 11px;
+  margin: 4px 0 0 0;
+  color: #757575;
+}
+
+.centerer {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* ----- loaders icons on the back of thumbs --- */
+
+div#loading {
+  height: auto;
+  min-width: 112px;
+  text-align: center;
+  /*background-color: gray;*/
+
+}
+
+div#loading img,
+div#loading a img {
+    max-height: 170px;
+    width: auto;
+    max-width: 160px;
+    margin-left: auto;
+    margin-right: auto;  
+    -webkit-transition: opacity 0.4s;
+     -moz-transition: opacity 0.4s;
+      -ms-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+}
+
+div#loading img#imgdetail-preview {
+  height: auto;
+  width: auto;
+  max-height: 590px;
+  max-width: 100%;
+}
+
+div.is-loading {
+  /*background-color: #444;
+  background-image: url('http://desandro.github.io/imagesloaded/assets/loading.gif');*/
+  background-image: url('../../images/ring-alt.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+div.is-broken {
+  background-image: url('http://desandro.github.io/imagesloaded/assets/broken.png');
+  background-color: #be3730;
+  width: 120px;
+}
+
+div.is-loading img,
+div.is-loading a img,
+div.is-broken a img {
+  opacity: 0;
+}
+
+.btn-price {
+  left: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+sup, sub {
+  font-size: 60%;
+}
+
+/* ---- Lower banner for loading ----- */
+
+.static-banner {
+  position: fixed;
+  left: auto;
+  margin-right: 10px;
+  top: 102px; /*auto;*/
+  background: hsla(0, 0%, 46%, 1); /*hsla(210, 100%, 50%, 0.8);*/
+  font-size: 11px;
+  z-index: 3;
+  padding: 5px 20px;
+  color: white;
+  pointer-events: none;
+  right: 0;
+  /*bottom: 0;*/
+}
+
+/* ----- Cards ----- */
+
+.grid .card .card-content .card-title {
+  line-height: 0;
+  font-size: 12px;
+}
+
+.grid .card .card-content {
+  padding: 2px 5px;
+}
+
+.grid .card .card-content p,
+.grid .card .card-title {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.grid .card .card-reveal {
+  padding: 5px;
+}
+
+.grid .card .card-reveal p {
+  font-weight: 300;
+  font-size: 11px;
+}
+
+.grid .card .card-reveal .card-title {
+  line-height: 24px;
+}
+
+/* ----- Switch ----- */
+.switch {
+  margin-top: -20px; /*For top position*/
+  margin-right: -10px;
+}
+.grid .card .card-content .switch {
+  /*margin-top: -20px; For top position
+  margin-right: -10px;*/
+  right: 0;
+  position: absolute;
+  bottom: 0px;
+}
+
+.grid .card .card-content .switch p {
+  float: left; 
+  padding-right: 56px; 
+}
+
+.switch label .lever,
+.grid .card .card-content .switch label .lever {
+  width: 17px;
+  height: 13px;
+  margin: 0 20px;
+}
+.switch label .lever:after,
+.grid .card .card-content .switch label .lever:after {
+  width: 18px;
+  height: 18px;
+  top: -2px;
+}
+.switch label input[type=checkbox]:checked+.lever:after,
+.grid .card .card-content .switch label input[type=checkbox]:checked+.lever:after {
+    left: 4px;
+}
+
+.switch label input[type=checkbox]:checked+.lever,
+.grid .card .card-content .switch label input[type=checkbox]:checked+.lever {
+  background-color: #AF0000;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after,
+.grid .card .card-content .switch label input[type=checkbox]:checked+.lever:after {
+  background-color: #E0A3A3;
+}
+/* ----- Open Popup ----- */
+
+#open-popup {padding:20px}
+.std-popup {
+  position: relative;
+  background: #DDD;
+  opacity: 0.9;
+  padding: 40px;
+  width: auto;
+  max-width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}

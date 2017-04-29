@@ -1,0 +1,54 @@
+
+#header {
+    margin-bottom: 20px;
+}
+
+input.header-search-input {
+    padding: 8px 72px 8px 72px;
+    width: 90%;
+}
+i.mdi-content-send {
+    margin-left: 100%;
+}
+
+.dl-horizontal dd {
+	word-wrap: break-word; 
+	margin-left: 110px;
+}
+
+.dl-horizontal dt {
+	width: 100px;
+}
+.fix-thumb:hover {
+	cursor: pointer;
+}
+
+
+/*** Freewall ***/
+div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1em;
+    vertical-align: baseline;
+}
+
+.free-wall {
+    margin: 15px;
+}
+
+.brick {
+    background-color: white;
+    float: left;
+    cursor: default;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.brick img {
+    margin: 0;
+    display: block;
+}
+
+

@@ -1,0 +1,25 @@
+{
+
+	"url_viewCart"   : "http://localhost:8888/CI/index.php/transactions/view_cart",
+	"url_logout"     : "http://localhost:8888/CI/index.php/login/logout/noindex",
+	"url_controller" : "http://localhost:8888/CI/index.php/getprovidersfull",
+	"url_down_ref"   : "http://localhost:8888/CI/index.php/getprovidersfull/get_download_ref",
+	"url_validate"   : "http://localhost:8888/CI/index.php/login/validate_credentials",
+	"url_itemDelete" : "http://localhost:8888/CI/index.php/transactions/item_cart_delete",
+	"url_saveToCart" : "http://localhost:8888/CI/index.php/transactions/save_to_cart",
+	"url_storeTran"  : "http://localhost:8888/CI/index.php/transactions/store_transaction",
+	"url_Ing_down"   : "http://localhost:8888/CI/index.php/getprovidersfull/Ingimages_Download",
+
+	"imageBlock" 	 : 25,
+	"timeoutLimit" 	 : 20000,
+	"providers"		 : ["Fotolia", "Fotosearch", "Ingimages", "Depositphoto"],
+	"logo"			 : {
+		"Fotosearch"  : "Fs",
+		"Depositphoto": "Dp",
+		"Fotolia"	  : "Ft",
+		"Ingimages"	  : "In",
+		"Panthermedia": "Pt",
+		"Pixabay"	  : "Px"
+	}
+	
+}

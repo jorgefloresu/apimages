@@ -1,0 +1,248 @@
+$primary-font-size: 11px;
+$primary-color: #757575;
+$primary-background-color: #F1F1F1;
+
+$topbar-icons-size: 16px;
+$topbar-icons-height: 40px;
+$topbar-icons-line: 40px;
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+	background-color: $primary-background-color;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+nav {
+	color: $primary-color;
+}
+
+nav#topbar { 
+  	height: $topbar-icons-height;
+  	line-height: $topbar-icons-line;
+  	font-size: $topbar-icons-size;
+  	display: inline;
+}
+nav#topbar i {
+  	@extend nav#topbar;
+}
+
+nav#topbar li a {
+	font-size: $primary-font-size;
+	color: $primary-color;
+}
+
+nav#topbar #top-usercart i {
+  	font-size: 25px;
+}
+nav#topbar #top-usercart i.tiny {
+  	font-size: 1.5em;
+}
+
+nav#topbar .cart-total {
+	display: inline;
+	position: absolute;
+	width: 25px;
+	text-align: center;
+	margin-left: -30px;
+	margin-top: 2px;
+}
+nav#topbar .task-cat {
+  	font-size: 0.7rem;
+}
+
+#top-options {
+	height: $topbar-icons-height - 3px;
+	line-height: $topbar-icons-line - 3px;
+}
+#top-options.active {
+  	height: $topbar-icons-height;
+  	line-height: $topbar-icons-line;
+}
+#top-options.active:hover {
+  	height: $topbar-icons-height - 1px;
+  	line-height: $topbar-icons-line - 1px;
+}
+
+header .brand-logo {
+  	margin: 1px 0px;
+  	padding: 0 10px;
+  	color: $primary-color;
+}
+header .brand-logo img{ 
+  	width: 145px;
+    height: auto;
+    margin-top: 3px;
+}
+
+#header {
+    margin-bottom: 20px;
+}
+
+nav#slide-search-bar {
+	width: 700px;
+	height: 0;
+	margin: 50px auto;
+	line-height: 55px;
+}
+
+nav#site-link {
+    margin-top: 15px;
+    height: 40px;
+    line-height: 40px;
+    background-color: transparent;
+    box-shadow: none;
+}
+.breadcrumb,
+.breadcrumb:before {
+  	color: $primary-color;
+  	font-size: 12px;
+}
+.breadcrumb:last-child {
+  	color: #D84A4A;
+}
+
+nav#home-horizontal-nav{
+    margin-top: 40px;
+    opacity: 1;
+	height: 50px;
+    line-height: 50px;
+}
+nav#home-horizontal-nav li a {
+	color: $primary-color;
+}
+
+i.closer-right {
+	margin-left: 4px;
+	font-size: 16px;
+}
+i.closer-left {
+	margin-right: 4px;
+	font-size: 16px;
+}
+
+.side-nav li {
+  	line-height: 1.5;
+}
+
+/* ---- Footer ----- */
+
+#footbar li a,
+.footer-copyright div {
+	font-size: 11px;
+    color: $primary-color;
+}
+.footer-copyright .row {
+	margin-bottom: 0;
+}
+
+#social li a{
+	padding: 0 10px;
+}
+
+.page-footer .footer-copyright {
+    box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.16);
+    z-index: 999;
+    position: relative;
+    background-color: white;
+}
+.page-footer {
+    margin-top: 0;
+} 
+ul#footer {	
+	height: 50px;
+	width: 260px;
+    margin: auto;	
+} 
+
+/* ----------------- */
+
+.imgdetail .card,
+.imgdetail .card .card-title {
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 25px;
+}
+
+@mixin transition($time) {
+  	-webkit-transition: background $time ease-in;
+       -moz-transition: background $time ease-in;
+        -ms-transition: background $time ease-in;
+            transition: background $time ease-in;
+}
+@mixin transition-text($time) {
+  	-webkit-transition: color $time ease-in;
+       -moz-transition: color $time ease-in;
+        -ms-transition: color $time ease-in;
+            transition: color $time ease-in;
+}
+.card-black {
+	background-color: #000 !important;
+	@include transition(0.5s);
+}
+
+.action-red {
+	background-color: #B71C1C !important;
+	@include transition(0.5s);
+}
+
+.card-text {
+	color: #FFF !important;
+	@include transition-text(0.5s);
+}
+
+.provider {
+	margin-left: -21px;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.imgdetail .card .card-action {
+	padding: 15px 4px;
+	white-space: nowrap;
+	font-weight: normal;
+}
+
+.imgdetail .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  	margin-right: 0;
+}
+
+.imgdetail #keywords-preview {
+  	font-size: 10px;
+  	color: $primary-color;
+}
+
+#dimension {
+  font-size: $primary-font-size;
+}
+
+.dl-horizontal {
+	width: 100%;
+	overflow: hidden;
+	padding: 10px;
+	margin: 0;
+	font-size: 10px;
+	line-height: 30px;
+}
+.dl-horizontal dt {
+	float: left;
+	width: 60%;
+	/* adjust the width; make sure the total of both is 100% */
+	padding: 0;
+	margin: 0;
+	font-weight: 600;
+}
+.dl-horizontal dd {
+	float: left;
+	width: 40%;
+	/* adjust the width; make sure the total of both is 100% */
+	padding: 0;
+	margin: 0;
+	word-wrap: break-word; 
+}
